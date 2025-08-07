@@ -18,11 +18,9 @@ struct AVLTree {
     AVLTree() {
         root = NULL;
     }
-
     int Height(TreeNode *node) {
         return node ? node->height : 0;
     }
-
     int GetBalance(TreeNode *node) {
         return node ? Height(node->left) - Height(node->right) : 0;
     }
